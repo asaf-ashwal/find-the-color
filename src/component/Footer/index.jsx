@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import { GlobalContext } from "../../App";
 
 function index() {
-  const clicks = 12;
-  const textToShow = "Keep Searching!";
+  const {text,clicks}=useContext(GlobalContext)
+  // const clicks = 12;
+  // const textToShow = "Keep Searching!";
   return (
     <footer>
       <section>Click:{clicks}</section>
-      <p>{textToShow}</p>
+      <p>{text}</p>
     </footer>
   );
 }
