@@ -2,15 +2,16 @@ import "./App.css";
 import Header from "./component/Header/index";
 import Layout from "./component/Layout/index";
 import Footer from "./component/Footer/index";
-import { createContext, useState } from "react";
-import { victoryNumber } from "./functions/utilsFunc";
+import { createContext, useRef, useState } from "react";
+import { victoryNumber } from "./functions/utilsFunc.jsx";
 
 export const GlobalContext = createContext();
 
 function App() {
-  const victoryIndex = victoryNumber();
+  const victoryIndex = useRef(victoryNumber()).current;
   const [clicks, setClicks] = useState(0);
   const [text, setText] = useState("Keep Searching!");
+  // const [arr, setArr] = useState([]);
   return (
     <GlobalContext.Provider
       value={{ clicks, setClicks, text, setText, victoryIndex }}
@@ -18,6 +19,7 @@ function App() {
       <Header />
       <Layout />
       <Footer />
+      
     </GlobalContext.Provider>
   );
 }

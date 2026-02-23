@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer section {
+  color: aliceblue;
+  font-size: 55px;
+  font-weight: 900;
+}
+footer p {
+  font-size: 45px;
+  font-weight: 900;
+  color: #fdcc55;
+  display: inline-block;
+}

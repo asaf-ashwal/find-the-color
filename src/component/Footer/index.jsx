@@ -1,4 +1,5 @@
 import React, { useContext } from "react";
+import style from "./style.module.css";
 import { GlobalContext } from "../../App";
 
 function index() {
@@ -7,7 +8,7 @@ function index() {
   // const textToShow = "Keep Searching!";
   return (
     <footer>
-      <section>Click:{clicks}</section>
+      <section>Click: {clicks}</section>
       <p>{text}</p>
     </footer>
   );

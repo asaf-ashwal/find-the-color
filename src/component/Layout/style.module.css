@@ -1,0 +1,23 @@
+main {
+  margin: 20px 0;
+  width: 650px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  background-color: rgb(69, 73, 84);
+  border: 2px solid rgb(188, 194, 207);
+}
+main div {
+  border: 2px solid rgb(188, 194, 207);
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  font-weight: 900;
+}
+.lost {
+  background-color: rgb(226, 197, 152);
+  color: rgb(187, 162, 122);
+}

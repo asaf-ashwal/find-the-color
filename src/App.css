@@ -1,5 +1,14 @@
 body {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(41, 76, 134);
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
