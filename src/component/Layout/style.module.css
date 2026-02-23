@@ -17,7 +17,7 @@ main div {
   font-size: larger;
   font-weight: 900;
 }
-.lost {
-  background-color: rgb(226, 197, 152);
-  color: rgb(187, 162, 122);
+
+main div:hover {
+  transform: scale(1.1);
 }

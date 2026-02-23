@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import style from "./style.module.css";
-import { createArr } from "../../functions/utilsFunc";
+import { GlobalContext } from "../../App";
+import Cell from "../Cell/index";
 
 function index() {
-  const size = 100;
-  const arr = createArr(size);
-  return <main>{arr}</main>;
+  const { arr } = useContext(GlobalContext);
+  return (
+    <main>
+      {arr.map((v, i) => (
+        <Cell key={i} i={i} />
+      ))}
+    </main>
+  );
 }
 
 export default index;
