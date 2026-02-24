@@ -3,7 +3,7 @@ import Header from "./component/Header/index";
 import Layout from "./component/Layout/index";
 import Footer from "./component/Footer/index";
 import { createContext, useRef, useState } from "react";
-import { createArr, victoryNumber,createcolor } from "./functions/utilsFunc.jsx";
+import { createArr, victoryNumber,createcolor } from "./functions/utilsFunc.js";
 
 export const GlobalContext = createContext();
 
@@ -15,6 +15,7 @@ function App() {
   const [clicks, setClicks] = useState(0);
   const [text, setText] = useState("Keep Searching!");
   const [arr, setArr] = useState(createArr());
+  
   return (
     <GlobalContext.Provider
       value={{mainColor, clicks, text, setClicks, setText, victoryIndex, arr, setArr }}
