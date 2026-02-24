@@ -1,12 +1,14 @@
-import React from "react";
-import style from "./style.module.css";
-
+import React, { useContext } from "react";
+import styleF from "./style.module.css";
+import { GlobalContext } from "../../App";
 
 function index() {
+  const { mainColor } = useContext(GlobalContext);
   return (
     <header>
       <h1>
-        Find the <span>Secret Color!</span><div></div>
+        Find the <span>Secret Color!</span>
+        <div style={{ backgroundColor: mainColor }}></div>
       </h1>
     </header>
   );

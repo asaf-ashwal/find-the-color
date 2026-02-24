@@ -4,8 +4,6 @@ import { GlobalContext } from "../../App";
 
 function index() {
   const {text,clicks}=useContext(GlobalContext)
-  // const clicks = 12;
-  // const textToShow = "Keep Searching!";
   return (
     <footer>
       <section>Click: {clicks}</section>
