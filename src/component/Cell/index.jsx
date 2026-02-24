@@ -16,6 +16,7 @@ function index({ i }) {
 
   function isVictory() {
     const newArr = [...arr];
+    
     if (newArr[i]?.text) return;
     if (text !== "Keep Searching!") return;
     if (i === victoryIndex) {

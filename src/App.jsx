@@ -9,9 +9,7 @@ import { createArr, victoryNumber,createcolor } from "./functions/utilsFunc.js";
 export const GlobalContext = createContext();
 
 function App() {
-  // const victoryIndex = useRef(victoryNumber()).current;
-  const mainColor = useRef(createcolor()).current;
-  
+  const [mainColor, setMainColor] = useState(createcolor());
   const [victoryIndex, setVictoryIndex] = useState(victoryNumber());
   console.log("the winning number: ", victoryIndex);
   const [clicks, setClicks] = useState(0);
@@ -20,7 +18,7 @@ function App() {
   
   return (
     <GlobalContext.Provider
-      value={{setVictoryIndex,mainColor, clicks, text, setClicks, setText, victoryIndex, arr, setArr }}
+      value={{setMainColor, setVictoryIndex,mainColor, clicks, text, setClicks, setText, victoryIndex, arr, setArr }}
     >
       <Header />
       <Layout />

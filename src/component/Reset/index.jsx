@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import "./style.css";
 import { GlobalContext } from "../../App";
-import { createArr, victoryNumber } from "../../functions/utilsFunc";
+import { createArr, createcolor, victoryNumber } from "../../functions/utilsFunc";
 
 function index() {
   console.log("in button");
-  const { setVictoryIndex, victoryIndex, setClicks, setText, setArr } =
+  const { setMainColor,setVictoryIndex, victoryIndex, setClicks, setText, setArr } =
     useContext(GlobalContext);
   function handleClick() {
+    setMainColor(createcolor())
     setVictoryIndex(victoryNumber());
     setClicks(0);
     setText("Keep Searching!");

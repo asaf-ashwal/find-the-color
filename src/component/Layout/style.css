@@ -5,8 +5,8 @@
   max-width: 95vw;
   max-height: 45vh;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   background-color: rgb(69, 73, 84);
   border: 2px solid rgb(188, 194, 207);
 }
