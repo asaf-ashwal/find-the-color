@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../App";
-import styleF from "./style.module.css";
+import "./style.css";
 
 function index({ i }) {
   const {
@@ -31,7 +31,7 @@ function index({ i }) {
 
   return (
     <div
-      className={`${styleF[arr[i].class]}`}
+      className={`${arr[i].class}`}
       style={{ backgroundColor: arr[i].color }}
       onClick={() => {
         isVictory();

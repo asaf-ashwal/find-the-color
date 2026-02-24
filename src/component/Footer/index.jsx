@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import style from "./style.module.css";
+import "./style.css";
 import { GlobalContext } from "../../App";
 
 function index() {

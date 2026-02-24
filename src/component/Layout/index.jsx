@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
-import "./style.module.css";
+import "./style.css";
 import { GlobalContext } from "../../App";
 import Cell from "../Cell/index";
 
 function index() {
   const { arr } = useContext(GlobalContext);
   return (
-    <main>
+    <main className={`main`}>
       {arr.map((v, i) => (
         <Cell key={i} i={i} />
       ))}
