@@ -1,9 +1,12 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../App";
 import "./style.css";
+import { reasetState } from "../../functions/utilsFunc";
 
 function index({ i }) {
   const {
+    setMainColor,
+    setVictoryIndex,
     mainColor,
     arr,
     setArr,
@@ -16,7 +19,7 @@ function index({ i }) {
 
   function isVictory() {
     const newArr = [...arr];
-    
+
     if (newArr[i]?.text) return;
     if (text !== "Keep Searching!") return;
     if (i === victoryIndex) {
@@ -25,7 +28,17 @@ function index({ i }) {
     } else {
       setClicks((prev) => prev + 1);
       newArr[i] = { class: "lost", text: "X" };
-      if (Number(clicks) === 98) alert("Player lost .");
+      if (Number(clicks) === 34) {
+      
+        reasetState({
+          setMainColor,
+          setVictoryIndex,
+          setClicks,
+          setText,
+          setArr,
+        });
+        alert("Player lost .");
+      }
     }
     setArr(newArr);
   }

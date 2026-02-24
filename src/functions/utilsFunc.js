@@ -21,3 +21,11 @@ export function createcolor() {
   }
   return color;
 }
+
+export function reasetState({ setMainColor,setVictoryIndex, setClicks, setText, setArr }) {
+setMainColor(createcolor())
+    setVictoryIndex(victoryNumber());
+    setClicks(0);
+    setText("Keep Searching!");
+    setArr(createArr());
+}
