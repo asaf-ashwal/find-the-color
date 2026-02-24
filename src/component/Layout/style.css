@@ -2,7 +2,8 @@
   margin: 20px 0;
   width: 650px;
   height: 550px;
-  max-width: 100vw;
+  max-width: 95vw;
+  max-height: 45vh;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);

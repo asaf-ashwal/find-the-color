@@ -14,3 +14,12 @@ footer p {
   color: #fdcc55;
   display: inline-block;
 }
+@media (max-width: 600px) {
+ footer section {
+  font-size: 45px;
+}
+footer section {
+  font-size: 45px;
+}
+}
+

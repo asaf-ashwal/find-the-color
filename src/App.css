@@ -1,9 +1,11 @@
 body {
+    font-family: 'Brush Script MT', cursive;
+
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(41, 76, 134);
+  background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
 
 #root {
